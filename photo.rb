@@ -9,7 +9,7 @@ class Photo
 
 	def display
 		puts "-" * 50
-		puts "Here is your photo!"
+		puts "PHOTO"
 		puts "URL: #{image_source}"
 		puts "Caption: #{caption}"
 		comments.each do |id, text|

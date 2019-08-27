@@ -8,7 +8,7 @@ class StatusUpdate
 
 	def display
 		puts "-" * 50
-		puts "Here is your status!"
+		puts "STATUS UPDATE"
 		puts "Body: #{body}"
 		comments.each do |id, text|
 			puts "#{id}: #{text}"
