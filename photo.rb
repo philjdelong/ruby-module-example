@@ -29,7 +29,11 @@ class Photo
 	end
 
 	def next_comment_id
-		total_comments + 1
+		if total_comments == 0
+			total_comments + 1
+		else
+			comments.keys.last + 1
+		end
 	end
 
 	def total_comments
